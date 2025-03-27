@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Love Times</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function atualizarContador(id, dataAlvo) {
+            const alvo = new Date(dataAlvo).getTime();
+            setInterval(() => {
+                const agora = new Date().getTime();
+                const diferenca = alvo - agora;
+                const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+                const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+                document.getElementById(id).innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+            }, 1000);
+        }
+        window.onload = function() {
+            atualizarContador("contador1", "2024-03-23T20:38:19"); // Tempo juntos
+            atualizarContador("contador2", "2025-04-16T00:00:10"); // Seu aniversário
+            atualizarContador("contador3", "2026-01-11T00:00:10"); // Meu aniversário
+            atualizarContador("contador4", "2024-11-03T00:00:00"); // Primeira Chance
+            atualizarContador("contador5", "2024-03-23T00:00:00"); // Tempo juntos
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">THE LOVE TIMES</h1>
+            <p class="edition">VOL. 172 - NO. 59 | Belo Horizonte, FRIDAY, JULY 21, 1940 | PRICE: 10 CENT</p>
+        </header>
+        <main>
+            <h2 class="headline">O Amor Que Desafia o Tempo ❤️</h2>
+            <p class="subheadline">Uma história de romance eterno</p>
+            <div class="main-image">
+                <img class="fotonossa" src="imagens/Murilo&Fernanda01.jpeg" alt="Foto do casal">
+            </div>
+            <p class="article01">Provérbios 18:22
+            </p>
+            <p class="article01">
+                "Quem encontra uma esposa
+                encontra algo excelente;
+                recebeu uma bênção do Senhor."
+            </p>
+            <p class="article">Meu amor,
+
+                Eu queria muito encontrar as palavras certas para expressar o que sinto por você, mas sei que algumas
+                 coisas são tão profundas que não podem ser completamente ditas, só sentidas. A cada dia que passo ao seu lado, me
+                  sinto mais grato por ter você em minha vida. Admiro tanto a sua força, a sua garra, o jeito que você corre atrás dos
+                   seus sonhos com tanta determinação. Você é uma mulher que me inspira, que faz tudo parecer possível, que transforma qualquer desafio em motivação.
+            </p>
+                
+            <p class="article">    Sua beleza, não só externa, mas a beleza da sua alma, me faz cada vez mais apaixonado. Não existe ninguém que se compare a você. Além disso, o 
+                seu companheirismo é algo que me conforta todos os dias. Saber que posso contar com você para tudo, em qualquer momento, me dá uma paz imensa. Você sempre está ao meu lado, seja 
+                nos dias bons ou nos mais difíceis, e isso é algo que eu nunca vou deixar de valorizar.💕</p>
+            </p>
+            <div class="extra-section">
+                <h3>Linha do tempo...</h3>
+                <p><strong>Minha e Sua:</strong></p>            
+                <img class="fotonossa01" src="imagens/Murilo&Fernanda05.jpeg" alt="Foto do casal">
+        
+                <p>Tempo desde que começamos nossa história: <span id="contador1"></span>
+                </p>
+                <p>Tempo até seu aniversário: <span id="contador2"></span></p>
+                <p>Tempo até meu aniversário: <span id="contador3"></span></p>
+                <p>Tempo desde quando você me deu uma chance: <span id="contador4"></span>
+            </div>
+            <aside class="important-info">
+                <h3>Como é nosso amor</h3>
+                <p>Nosso amor é algo único. Ele é feito de confiança, de cuidado, de risos e também de lágrimas compartilhadas. É a nossa construção diária, onde cada gesto, cada palavra, cada olhar tem um significado. Eu amo a forma como enfrentamos juntos os altos e baixos da vida, sabendo que, ao nosso lado, sempre temos o melhor apoio que poderíamos ter: um ao outro.
+
+                    Você é tudo para mim, e só quero que saiba o quanto sou grato por te ter em minha vida. Eu te amo, e a cada dia tenho mais certeza de que sou o homem mais sortudo do mundo por compartilhar minha vida com você.
+                    
+                    Com todo o meu amor,
+                    Murilo</p>
+            </aside>
+            <div class="music">
+                <h3>A trilha sonora do nosso amor</h3>
+                <p class="music"><em>"Podemos ser um caso indefinido ou nada mais</em></p>
+                <p class="music"><em>  Apenas bons amigos, namorar, casar, ter filhos</em></p>    
+                <p class="music"><em>Passar a vida inteira juntos, oh"</em></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YeqgMW1_gA4?si=c7SSid5cqi3p9dGu&amp;start=114" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </main>
+        <footer>
+            <p>Publicado com amor, especialmente para você ❤️</p>
+            <p>De Murilo para Fernanda. . . </p>
+        </footer>
+    </div>
+</body>
+</html>

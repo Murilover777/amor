@@ -1,0 +1,102 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-image: url('imagens/jornal01.jpg'); /* Caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém o fundo fixo ao rolar a página */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.85); /* Fundo branco com opacidade */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.headline {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #b22222;
+}
+
+.main-image {
+    width: 500px;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+   /* border: 3px solid #b22222; */
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.fotonossa {
+    width: 500px;
+}
+
+.fotonossa01 {
+    width: 500px;
+    max-width: 600px;
+    
+}
+
+.image-container, .extra-images {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.image-container img, .extra-images img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+.article {
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+.article01 {
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 30px;
+    font-weight: bold;
+    margin: 1px ;
+    font-style: italic;
+
+}
+.timers {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 15px;
+    background: #e0d6c7;
+    border-radius: 5px;
+}
+.footer {
+    margin-top: 30px;
+    font-style: italic;
+    color: #555;
+}
+.music {
+    margin: 10px;
+    margin-top: 1px;
+}
